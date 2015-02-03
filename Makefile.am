@@ -88,7 +88,7 @@ lib_LTLIBRARIES = libext.la
 
 libext_la_SOURCES = el/libext/ext-base.cpp el/libext/datetime.cpp
 
-nobase_libext_la_HEADERS = el/libext.h \
+nobase_include_HEADERS = el/libext.h \
 	el/libext/ext-base.h el/libext/datetime.h
 
 
