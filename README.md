@@ -1,0 +1,2 @@
+# libext
+C++ library autotoolized
