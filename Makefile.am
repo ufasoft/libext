@@ -8,9 +8,7 @@ libext_FILES = 						\
 	el/libext/afterstl.h			\
 	el/libext/c-old.h				\
 	el/libext/cpp-old.h				\
-	el/libext/datetime.h			\
 	el/libext/ext-app.h				\
-	el/libext/ext-base.h			\
 	el/libext/ext-blob.h			\
 	el/libext/ext-core.h			\
 	el/libext/ext-safehandle.h		\
@@ -42,8 +40,6 @@ libext_FILES = 						\
 	el/libext/threader.cpp			\
 	el/libext/ext-file.cpp			\
 	el/libext/ext-fw.cpp			\
-	el/libext/datetime.cpp			\
-	el/libext/ext-base.cpp			\
 	el/libext/ext-os.cpp			\
 	el/libext/ext-app.cpp			\
 	el/libext/ext-string.cpp		\
@@ -88,15 +84,12 @@ libext_FILES = 						\
 	el/stl/filesystem				\
 	el/stl/filesystem.cpp				
 
-
-
-libext_SOURCES = $(libext_FILES)
-
 lib_LTLIBRARIES = libext.la 
 
+libext_la_SOURCES = el/libext/ext-base.cpp el/libext/datetime.cpp
 
-
-
+nobase_libext_la_HEADERS = el/libext.h \
+	el/libext/ext-base.h el/libext/datetime.h
 
 
 
