@@ -1,10 +1,6 @@
-build=@build@
-
 AM_CPPFLAGS = -I$(top_srcdir)
 
 libext_FILES = 						\
-	el/libext/libext.vcxproj			\
-	el/libext/libext.vcxproj.filters	\
 	el/libext/file_config.h             \
 	el/libext/afterstl.h			\
 	el/libext/c-old.h				\
@@ -14,7 +10,6 @@ libext_FILES = 						\
 	el/libext/ext-core.h			\
 	el/libext/ext-safehandle.h		\
 	el/libext/ext-sync.h			\
-	el/libext/ext-cpp.h				\
 	el/libext/ext-cpu.h				\
 	el/libext/ext-fw.h				\
 	el/libext/ext-regex.h			\
@@ -87,10 +82,22 @@ libext_FILES = 						\
 
 lib_LTLIBRARIES = libext.la 
 
-libext_la_SOURCES = el/libext/ext-base.cpp el/libext/datetime.cpp
+libext_la_SOURCES = 			\
+	el/libext/ext-base.cpp		\
+	el/libext/datetime.cpp		\
+	el/libext/libext.vcxproj	\
+	el/libext/libext.vcxproj.filters
 
-nobase_include_HEADERS = el/libext.h \
-	el/libext/ext-base.h el/libext/datetime.h
+nobase_include_HEADERS = 	\
+	el/libext.h				\
+	el/ext_messages.h		\
+	el/inc/default-defs.h	\
+	el/inc/ext_config.h		\
+	el/inc/inc_configs.h	\
+	el/libext/ext-base.h	\
+	el/libext/datetime.h	\
+	el/libext/ext-cpp.h
+
 
 
 

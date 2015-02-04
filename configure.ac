@@ -16,10 +16,10 @@ AC_PROG_CXX([clang++ g++])
 AM_PROG_CC_C_O
 AC_LANG([C++])
 
+AX_CHECK_COMPILE_FLAG([-std=c++1y], [CXXFLAGS="$CXXFLAGS -std=c++1y"], [CXXFLAGS="$CXXFLAGS -std=c++0x"])
 
 AC_OUTPUT(Makefile)
 
-echo
 echo
 echo
 echo "------------------------------------------------------------------------"
@@ -28,11 +28,6 @@ echo "------------------------------------------------------------------------"
 echo
 echo
 echo "Configuration Options Summary:"
-echo
-
-
-
-
 echo
 echo
 echo "Compilation............: make (gmake on FreeBSD)"
