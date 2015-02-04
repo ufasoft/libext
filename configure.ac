@@ -18,6 +18,13 @@ AC_LANG([C++])
 
 AX_CHECK_COMPILE_FLAG([-std=c++1y], [CXXFLAGS="$CXXFLAGS -std=c++1y"], [CXXFLAGS="$CXXFLAGS -std=c++0x"])
 
+AC_COMPILE_IFELSE([AC_LANG_PROGRAM([], [[
+	#ifndef __clang__
+		not clang
+	#endif
+	]])],
+	[CLANG=yes], [CLANG=no])
+
 if test "x$CLANG" = "xyes"; then
 	CXXFLAGS="$CXXFLAGS -stdlib=libc++"
 fi
