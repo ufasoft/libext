@@ -6,10 +6,7 @@ libext_FILES = 						\
 	el/libext/c-old.h				\
 	el/libext/cpp-old.h				\
 	el/libext/ext-app.h				\
-	el/libext/ext-blob.h			\
 	el/libext/ext-core.h			\
-	el/libext/ext-safehandle.h		\
-	el/libext/ext-sync.h			\
 	el/libext/ext-cpu.h				\
 	el/libext/ext-fw.h				\
 	el/libext/ext-regex.h			\
@@ -18,15 +15,9 @@ libext_FILES = 						\
 	el/libext/ext-lru.h				\
 	el/libext/ext-macro.h			\
 	el/libext/ext-meta.h			\
-	el/libext/ext-net.h				\
 	el/libext/ext-os.h				\
 	el/libext/ext-protocols.h		\
 	el/libext/ext-str.h				\
-	el/libext/ext-stream.h			\
-	el/libext/ext-string.h			\
-	el/libext/ext-thread.h			\
-	el/libext/interlocked.h			\
-	el/libext/exthelpers.h			\
 	el/libext/ext-ptr.h				\
 	el/libext/facilities.h			\
 	el/libext/gcc-intrinsic.h		\
@@ -38,14 +29,10 @@ libext_FILES = 						\
 	el/libext/ext-fw.cpp			\
 	el/libext/ext-os.cpp			\
 	el/libext/ext-app.cpp			\
-	el/libext/ext-string.cpp		\
-	el/libext/ext-blob.cpp			\
-	el/libext/ext-stream.cpp		\
 	el/libext/ext-core.cpp			\
 	el/libext/ext-ip-address.cpp	\
 	el/libext/ext-net.cpp			\
 	el/libext/mapped-file.cpp		\
-	el/libext/sockets.cpp 			\
 	el/libext/varvalue.cpp			\
 	el/libext/ext-json.cpp			\
 	el/libext/http.cpp				\
@@ -82,21 +69,35 @@ libext_FILES = 						\
 
 lib_LTLIBRARIES = libext.la 
 
-libext_la_SOURCES = 			\
-	el/libext/ext-base.cpp		\
-	el/libext/datetime.cpp		\
-	el/libext/libext.vcxproj	\
+libext_la_SOURCES = 				\
+	el/libext/datetime.cpp			\
+	el/libext/ext-base.cpp			\
+	el/libext/ext-string.cpp		\
+	el/libext/ext-blob.cpp			\
+	el/libext/ext-stream.cpp		\
+	el/libext/ext-sync.h			\
+	el/libext/ext-blob.h			\
+	el/libext/ext-safehandle.h		\
+	el/libext/sockets.cpp 			\
+	el/libext/interlocked.h			\
+	el/libext/exthelpers.h			\
+	el/libext/libext.vcxproj		\
 	el/libext/libext.vcxproj.filters
 
-nobase_include_HEADERS = 	\
-	el/libext.h				\
-	el/ext_messages.h		\
-	el/inc/default-defs.h	\
-	el/inc/ext_config.h		\
-	el/inc/inc_configs.h	\
-	el/libext/ext-base.h	\
-	el/libext/datetime.h	\
-	el/libext/ext-cpp.h
+nobase_include_HEADERS = 			\
+	el/libext.h						\
+	el/ext_messages.h				\
+	el/inc/default-defs.h			\
+	el/inc/ext_config.h				\
+	el/inc/inc_configs.h			\
+	el/libext/ext-base.h			\
+	el/libext/datetime.h			\
+	el/libext/ext-cpp.h				\
+	el/libext/ext-net.h				\
+	el/libext/ext-stream.h			\
+	el/libext/ext-string.h			\
+	el/libext/ext-thread.h			\
+
 
 uninstall-hook:
 	if test -d ${includedir}/el; then rmdir ${includedir}/el/libext ${includedir}/el/inc ${includedir}/el; fi
