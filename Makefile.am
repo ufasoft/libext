@@ -98,7 +98,8 @@ nobase_include_HEADERS = 	\
 	el/libext/datetime.h	\
 	el/libext/ext-cpp.h
 
-
+uninstall-hook:
+	if test -d ${includedir}/el; then rmdir ${includedir}/el/libext ${includedir}/el/inc ${includedir}/el; fi
 
 
 
