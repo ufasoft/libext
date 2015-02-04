@@ -18,6 +18,11 @@ AC_LANG([C++])
 
 AX_CHECK_COMPILE_FLAG([-std=c++1y], [CXXFLAGS="$CXXFLAGS -std=c++1y"], [CXXFLAGS="$CXXFLAGS -std=c++0x"])
 
+if test "x$CLANG" = "xyes"; then
+	CXXFLAGS="$CXXFLAGS -stdlib=libc++"
+fi
+
+
 AC_OUTPUT(Makefile)
 
 echo
