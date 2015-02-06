@@ -68,7 +68,6 @@ libext_la_SOURCES = 				\
 	el/libext/sockets.cpp 			\
 	el/libext/stack-trace.cpp		\
 	el/libext/threader.cpp			\
-	el/libext/exthelpers.h			\
 	el/libext/libext.vcxproj		\
 	el/libext/libext.vcxproj.filters
 
@@ -86,6 +85,7 @@ nobase_include_HEADERS = 			\
 	el/libext/facilities.h			\
 	el/libext/gcc-intrinsic.h		\
 	el/libext/interlocked.h			\
+	el/libext/exthelpers.h			\
 	el/libext/ext-app.h				\
 	el/libext/ext-base.h			\
 	el/libext/ext-cpp.h				\
