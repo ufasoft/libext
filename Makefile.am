@@ -59,7 +59,6 @@ libext_la_SOURCES = 				\
 	el/libext/ext-os.cpp			\
 	el/libext/ext-stream.cpp		\
 	el/libext/ext-string.cpp		\
-	el/libext/ext-safehandle.h		\
 	el/libext/murmurhash.cpp 		\
 	el/libext/sockets.cpp 			\
 	el/libext/stack-trace.cpp		\
@@ -94,6 +93,7 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-os.h				\
 	el/libext/ext-posix-win.h		\
 	el/libext/ext-ptr.h				\
+	el/libext/ext-safehandle.h		\
 	el/libext/ext-stream.h			\
 	el/libext/ext-string.h			\
 	el/libext/ext-sync.h			\
