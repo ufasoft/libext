@@ -98,6 +98,12 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-string.h			\
 	el/libext/ext-thread.h			
 
+if HAVE_FILESYSTEM
+else
+libext_la_SOURCES += el/stl/filesystem.cpp
+nobase_include_HEADERS += el/stl/filesystem
+endif
+
 
 uninstall-hook:
 	if test -d ${includedir}/el; then rmdir ${includedir}/el/libext ${includedir}/el/inc ${includedir}/el; fi

@@ -29,6 +29,9 @@ if test "x$CLANG" = "xyes"; then
 	CXXFLAGS="$CXXFLAGS -stdlib=libc++"
 fi
 
+AC_CHECK_HEADER([filesystem], $have_filesystem=true)
+AM_CONDITIONAL([HAVE_FILESYSTEM], [test x$have_filesystem = xtrue])
+
 
 AC_OUTPUT(Makefile)
 
