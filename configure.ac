@@ -18,14 +18,28 @@ AC_LANG([C++])
 
 AX_CHECK_COMPILE_FLAG([-std=c++1y], [CXXFLAGS="$CXXFLAGS -std=c++1y"], [CXXFLAGS="$CXXFLAGS -std=c++0x"])
 
-AC_COMPILE_IFELSE([AC_LANG_PROGRAM([], [[
-	#ifndef __clang__
-		not clang
-	#endif
-	]])],
-	[CLANG=yes], [CLANG=no])
 
-if test "x$CLANG" = "xyes"; then
+AC_COMPILE_IFELSE(
+173    [AC_LANG_SOURCE[
+174      #include <type_traits>
+175      #if !_LIBCPP_VERSION
+176      #error No libc++
+177      #endif
+178      void func() {}]
+179    ],
+180    [folly_cv_lib_libcpp=yes],
+181    [folly_cv_lib_libcpp=no])
+
+
+AC_COMPILE_IFELSE([AC_LANG_SOURCE[
+  #include <type_traits> 
+  #if !_LIBCPP_VERSION  
+  #error No libc++      
+  #endif                
+  void func() {}]       
+	],                       	[CLANG_LIBCPP=yes], [CLANG_LIBCPP=no])
+
+if test "x$CLANG_LIBCPP" = "xyes"; then
 	CXXFLAGS="$CXXFLAGS -stdlib=libc++"
 fi
 
