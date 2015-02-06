@@ -5,7 +5,6 @@ libext_FILES = 						\
 	el/libext/afterstl.h			\
 	el/libext/ext-cpu.h				\
 	el/libext/ext-regex.h			\
-	el/libext/ext-hash.h			\
 	el/libext/ext-http.h			\
 	el/libext/ext-lru.h				\
 	el/libext/ext-protocols.h		\
@@ -87,6 +86,7 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-cpp.h				\
 	el/libext/ext-core.h			\
 	el/libext/ext-fw.h				\
+	el/libext/ext-hash.h			\
 	el/libext/ext-macro.h			\
 	el/libext/ext-meta.h			\
 	el/libext/ext-net.h				\
