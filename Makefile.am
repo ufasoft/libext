@@ -20,7 +20,6 @@ libext_FILES = 						\
 	el/libext/facilities.h			\
 	el/libext/gcc-intrinsic.h		\
 	el/libext/ext-protocols.cpp		\
-	el/libext/ext-file.cpp			\
 	el/libext/ext-os.cpp			\
 	el/libext/ext-app.cpp			\
 	el/libext/ext-ip-address.cpp	\
@@ -66,6 +65,7 @@ libext_la_SOURCES = 				\
 	el/libext/ext-blob.cpp			\
 	el/libext/ext-core.cpp			\
 	el/libext/ext-encoding.cpp		\
+	el/libext/ext-file.cpp			\
 	el/libext/ext-fw.cpp			\
 	el/libext/ext-handlers.cpp		\
 	el/libext/ext-stream.cpp		\
