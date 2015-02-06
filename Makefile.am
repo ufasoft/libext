@@ -22,7 +22,6 @@ libext_FILES = 						\
 	el/libext/gcc-intrinsic.h		\
 	el/libext/ext-protocols.cpp		\
 	el/libext/ext-encoding.cpp		\
-	el/libext/threader.cpp			\
 	el/libext/ext-file.cpp			\
 	el/libext/ext-os.cpp			\
 	el/libext/ext-app.cpp			\
@@ -78,6 +77,7 @@ libext_la_SOURCES = 				\
 	el/libext/ext-safehandle.h		\
 	el/libext/sockets.cpp 			\
 	el/libext/stack-trace.cpp		\
+	el/libext/threader.cpp			\
 	el/libext/interlocked.h			\
 	el/libext/exthelpers.h			\
 	el/libext/libext.vcxproj		\
