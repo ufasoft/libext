@@ -8,7 +8,6 @@ libext_FILES = 						\
 	el/libext/ext-http.h			\
 	el/libext/ext-lru.h				\
 	el/libext/ext-protocols.h		\
-	el/libext/ext-str.h				\
 	el/libext/ext-protocols.cpp		\
 	el/libext/ext-ip-address.cpp	\
 	el/libext/ext-net.cpp			\
@@ -94,6 +93,7 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-posix-win.h		\
 	el/libext/ext-ptr.h				\
 	el/libext/ext-safehandle.h		\
+	el/libext/ext-str.h				\
 	el/libext/ext-stream.h			\
 	el/libext/ext-string.h			\
 	el/libext/ext-sync.h			\
