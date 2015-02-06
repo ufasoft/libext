@@ -3,7 +3,6 @@ AM_CPPFLAGS = -I$(top_srcdir)
 libext_FILES = 						\
 	el/libext/file_config.h             \
 	el/libext/afterstl.h			\
-	el/libext/c-old.h				\
 	el/libext/cpp-old.h				\
 	el/libext/ext-cpu.h				\
 	el/libext/ext-regex.h			\
@@ -84,6 +83,7 @@ nobase_include_HEADERS = 			\
 	el/inc/ext_config.h				\
 	el/inc/inc_configs.h			\
 	el/libext/binary-reader-writer.h	\
+	el/libext/c-old.h				\
 	el/libext/datetime.h			\
 	el/libext/interlocked.h			\
 	el/libext/ext-app.h				\
