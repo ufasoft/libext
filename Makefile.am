@@ -24,7 +24,6 @@ libext_FILES = 						\
 	el/libext/varvalue.cpp			\
 	el/libext/ext-json.cpp			\
 	el/libext/http.cpp				\
-	el/libext/ext-posix-win.h		\
 	el/libext/vc.h					\
 	el/vc/vc-warnings.h				\
 	el/libext/bignum.cpp			\
@@ -95,6 +94,7 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-fw.h				\
 	el/libext/ext-os.h				\
 	el/libext/ext-net.h				\
+	el/libext/ext-posix-win.h		\
 	el/libext/ext-stream.h			\
 	el/libext/ext-string.h			\
 	el/libext/ext-thread.h			
