@@ -67,6 +67,7 @@ libext_la_SOURCES = 				\
 	el/libext/datetime.cpp			\
 	el/libext/ext-base.cpp			\
 	el/libext/ext-blob.cpp			\
+	el/libext/ext-encoding.cpp		\
 	el/libext/ext-fw.cpp			\
 	el/libext/ext-handlers.cpp		\
 	el/libext/ext-stream.cpp		\
@@ -91,7 +92,6 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-base.h			\
 	el/libext/datetime.h			\
 	el/libext/ext-cpp.h				\
-	el/libext/ext-encoding.cpp		\
 	el/libext/ext-fw.h				\
 	el/libext/ext-net.h				\
 	el/libext/ext-stream.h			\
