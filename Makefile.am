@@ -5,7 +5,6 @@ libext_FILES = 						\
 	el/libext/afterstl.h			\
 	el/libext/c-old.h				\
 	el/libext/cpp-old.h				\
-	el/libext/ext-app.h				\
 	el/libext/ext-cpu.h				\
 	el/libext/ext-regex.h			\
 	el/libext/ext-hash.h			\
@@ -19,7 +18,6 @@ libext_FILES = 						\
 	el/libext/facilities.h			\
 	el/libext/gcc-intrinsic.h		\
 	el/libext/ext-protocols.cpp		\
-	el/libext/ext-app.cpp			\
 	el/libext/ext-ip-address.cpp	\
 	el/libext/ext-net.cpp			\
 	el/libext/mapped-file.cpp		\
@@ -58,6 +56,7 @@ lib_LTLIBRARIES = libext.la
 libext_la_SOURCES = 				\
 	el/libext/binary-reader-writer.cpp	\
 	el/libext/datetime.cpp			\
+	el/libext/ext-app.cpp			\
 	el/libext/ext-base.cpp			\
 	el/libext/ext-blob.cpp			\
 	el/libext/ext-core.cpp			\
@@ -88,6 +87,7 @@ nobase_include_HEADERS = 			\
 	el/libext/binary-reader-writer.h	\
 	el/libext/datetime.h			\
 	el/libext/interlocked.h			\
+	el/libext/ext-app.h				\
 	el/libext/ext-base.h			\
 	el/libext/ext-cpp.h				\
 	el/libext/ext-core.h			\
