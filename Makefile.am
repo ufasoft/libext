@@ -96,7 +96,7 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-net.h				\
 	el/libext/ext-stream.h			\
 	el/libext/ext-string.h			\
-	el/libext/ext-thread.h			\
+	el/libext/ext-thread.h			
 
 
 uninstall-hook:
