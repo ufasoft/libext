@@ -21,7 +21,6 @@ libext_FILES = 						\
 	el/libext/facilities.h			\
 	el/libext/gcc-intrinsic.h		\
 	el/libext/ext-protocols.cpp		\
-	el/libext/ext-encoding.cpp		\
 	el/libext/ext-file.cpp			\
 	el/libext/ext-os.cpp			\
 	el/libext/ext-app.cpp			\
@@ -92,6 +91,7 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-base.h			\
 	el/libext/datetime.h			\
 	el/libext/ext-cpp.h				\
+	el/libext/ext-encoding.cpp		\
 	el/libext/ext-fw.h				\
 	el/libext/ext-net.h				\
 	el/libext/ext-stream.h			\
