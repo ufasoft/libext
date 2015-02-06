@@ -3,7 +3,6 @@ AM_CPPFLAGS = -I$(top_srcdir)
 libext_FILES = 						\
 	el/libext/file_config.h             \
 	el/libext/ext-protocols.cpp		\
-	el/libext/ext-ip-address.cpp	\
 	el/libext/ext-net.cpp			\
 	el/libext/mapped-file.cpp		\
 	el/libext/varvalue.cpp			\
@@ -48,6 +47,7 @@ libext_la_SOURCES = 				\
 	el/libext/ext-file.cpp			\
 	el/libext/ext-fw.cpp			\
 	el/libext/ext-handlers.cpp		\
+	el/libext/ext-ip-address.cpp	\
 	el/libext/ext-os.cpp			\
 	el/libext/ext-stream.cpp		\
 	el/libext/ext-string.cpp		\
