@@ -8,7 +8,6 @@ libext_FILES = 						\
 	el/libext/ext-app.h				\
 	el/libext/ext-core.h			\
 	el/libext/ext-cpu.h				\
-	el/libext/ext-fw.h				\
 	el/libext/ext-regex.h			\
 	el/libext/ext-hash.h			\
 	el/libext/ext-http.h			\
@@ -22,11 +21,9 @@ libext_FILES = 						\
 	el/libext/facilities.h			\
 	el/libext/gcc-intrinsic.h		\
 	el/libext/ext-protocols.cpp		\
-	el/libext/ext-handlers.cpp		\
 	el/libext/ext-encoding.cpp		\
 	el/libext/threader.cpp			\
 	el/libext/ext-file.cpp			\
-	el/libext/ext-fw.cpp			\
 	el/libext/ext-os.cpp			\
 	el/libext/ext-app.cpp			\
 	el/libext/ext-core.cpp			\
@@ -72,9 +69,11 @@ lib_LTLIBRARIES = libext.la
 libext_la_SOURCES = 				\
 	el/libext/datetime.cpp			\
 	el/libext/ext-base.cpp			\
-	el/libext/ext-string.cpp		\
 	el/libext/ext-blob.cpp			\
+	el/libext/ext-fw.cpp			\
+	el/libext/ext-handlers.cpp		\
 	el/libext/ext-stream.cpp		\
+	el/libext/ext-string.cpp		\
 	el/libext/ext-sync.h			\
 	el/libext/ext-blob.h			\
 	el/libext/ext-safehandle.h		\
@@ -93,6 +92,7 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-base.h			\
 	el/libext/datetime.h			\
 	el/libext/ext-cpp.h				\
+	el/libext/ext-fw.h				\
 	el/libext/ext-net.h				\
 	el/libext/ext-stream.h			\
 	el/libext/ext-string.h			\
