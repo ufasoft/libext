@@ -28,8 +28,6 @@ libext_FILES = 						\
 	el/libext/varvalue.cpp			\
 	el/libext/ext-json.cpp			\
 	el/libext/http.cpp				\
-	el/libext/binary-reader-writer.h	\
-	el/libext/binary-reader-writer.cpp	\
 	el/libext/ext-posix-win.h		\
 	el/libext/vc.h					\
 	el/vc/vc-warnings.h				\
@@ -60,6 +58,7 @@ libext_FILES = 						\
 lib_LTLIBRARIES = libext.la 
 
 libext_la_SOURCES = 				\
+	el/libext/binary-reader-writer.cpp	\
 	el/libext/datetime.cpp			\
 	el/libext/ext-base.cpp			\
 	el/libext/ext-blob.cpp			\
@@ -87,9 +86,10 @@ nobase_include_HEADERS = 			\
 	el/inc/default-defs.h			\
 	el/inc/ext_config.h				\
 	el/inc/inc_configs.h			\
-	el/libext/ext-base.h			\
+	el/libext/binary-reader-writer.h	\
 	el/libext/datetime.h			\
 	el/libext/interlocked.h			\
+	el/libext/ext-base.h			\
 	el/libext/ext-cpp.h				\
 	el/libext/ext-core.h			\
 	el/libext/ext-fw.h				\
