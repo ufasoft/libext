@@ -79,6 +79,7 @@ libext_la_SOURCES = 				\
 	el/libext/libext.vcxproj.filters
 
 nobase_include_HEADERS = 			\
+	el/ext.h						\
 	el/libext.h						\
 	el/ext_messages.h				\
 	el/inc/default-defs.h			\
