@@ -13,14 +13,12 @@ libext_FILES = 						\
 	el/libext/ext-lru.h				\
 	el/libext/ext-macro.h			\
 	el/libext/ext-meta.h			\
-	el/libext/ext-os.h				\
 	el/libext/ext-protocols.h		\
 	el/libext/ext-str.h				\
 	el/libext/ext-ptr.h				\
 	el/libext/facilities.h			\
 	el/libext/gcc-intrinsic.h		\
 	el/libext/ext-protocols.cpp		\
-	el/libext/ext-os.cpp			\
 	el/libext/ext-app.cpp			\
 	el/libext/ext-ip-address.cpp	\
 	el/libext/ext-net.cpp			\
@@ -67,6 +65,7 @@ libext_la_SOURCES = 				\
 	el/libext/ext-file.cpp			\
 	el/libext/ext-fw.cpp			\
 	el/libext/ext-handlers.cpp		\
+	el/libext/ext-os.cpp			\
 	el/libext/ext-stream.cpp		\
 	el/libext/ext-string.cpp		\
 	el/libext/ext-sync.h			\
@@ -93,6 +92,7 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-cpp.h				\
 	el/libext/ext-core.h			\
 	el/libext/ext-fw.h				\
+	el/libext/ext-os.h				\
 	el/libext/ext-net.h				\
 	el/libext/ext-stream.h			\
 	el/libext/ext-string.h			\
