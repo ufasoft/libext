@@ -13,7 +13,6 @@ libext_FILES = 						\
 	el/libext/ext-protocols.h		\
 	el/libext/ext-str.h				\
 	el/libext/ext-ptr.h				\
-	el/libext/gcc-intrinsic.h		\
 	el/libext/ext-protocols.cpp		\
 	el/libext/ext-ip-address.cpp	\
 	el/libext/ext-net.cpp			\
@@ -85,6 +84,7 @@ nobase_include_HEADERS = 			\
 	el/libext/c-old.h				\
 	el/libext/datetime.h			\
 	el/libext/facilities.h			\
+	el/libext/gcc-intrinsic.h		\
 	el/libext/interlocked.h			\
 	el/libext/ext-app.h				\
 	el/libext/ext-base.h			\
