@@ -33,7 +33,6 @@ libext_FILES = 						\
 	el/libext/varvalue.cpp			\
 	el/libext/ext-json.cpp			\
 	el/libext/http.cpp				\
-	el/libext/stack-trace.cpp		\
 	el/libext/binary-reader-writer.h	\
 	el/libext/binary-reader-writer.cpp	\
 	el/libext/ext-posix-win.h		\
@@ -78,6 +77,7 @@ libext_la_SOURCES = 				\
 	el/libext/ext-blob.h			\
 	el/libext/ext-safehandle.h		\
 	el/libext/sockets.cpp 			\
+	el/libext/stack-trace.cpp		\
 	el/libext/interlocked.h			\
 	el/libext/exthelpers.h			\
 	el/libext/libext.vcxproj		\
