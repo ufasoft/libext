@@ -11,7 +11,6 @@ libext_FILES = 						\
 	el/libext/ext-meta.h			\
 	el/libext/ext-protocols.h		\
 	el/libext/ext-str.h				\
-	el/libext/ext-ptr.h				\
 	el/libext/ext-protocols.cpp		\
 	el/libext/ext-ip-address.cpp	\
 	el/libext/ext-net.cpp			\
@@ -61,8 +60,6 @@ libext_la_SOURCES = 				\
 	el/libext/ext-os.cpp			\
 	el/libext/ext-stream.cpp		\
 	el/libext/ext-string.cpp		\
-	el/libext/ext-sync.h			\
-	el/libext/ext-blob.h			\
 	el/libext/ext-safehandle.h		\
 	el/libext/murmurhash.cpp 		\
 	el/libext/sockets.cpp 			\
@@ -88,6 +85,7 @@ nobase_include_HEADERS = 			\
 	el/libext/exthelpers.h			\
 	el/libext/ext-app.h				\
 	el/libext/ext-base.h			\
+	el/libext/ext-blob.h			\
 	el/libext/ext-cpp.h				\
 	el/libext/ext-core.h			\
 	el/libext/ext-fw.h				\
@@ -95,8 +93,10 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-net.h				\
 	el/libext/ext-os.h				\
 	el/libext/ext-posix-win.h		\
+	el/libext/ext-ptr.h				\
 	el/libext/ext-stream.h			\
 	el/libext/ext-string.h			\
+	el/libext/ext-sync.h			\
 	el/libext/ext-thread.h			
 
 if HAVE_FILESYSTEM
