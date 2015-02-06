@@ -34,7 +34,6 @@ libext_FILES = 						\
 	el/libext/binary-reader-writer.h	\
 	el/libext/binary-reader-writer.cpp	\
 	el/libext/ext-posix-win.h		\
-	el/libext/murmurhash.cpp 		\
 	el/libext/vc.h					\
 	el/vc/vc-warnings.h				\
 	el/libext/bignum.cpp			\
@@ -75,10 +74,10 @@ libext_la_SOURCES = 				\
 	el/libext/ext-sync.h			\
 	el/libext/ext-blob.h			\
 	el/libext/ext-safehandle.h		\
+	el/libext/murmurhash.cpp 		\
 	el/libext/sockets.cpp 			\
 	el/libext/stack-trace.cpp		\
 	el/libext/threader.cpp			\
-	el/libext/interlocked.h			\
 	el/libext/exthelpers.h			\
 	el/libext/libext.vcxproj		\
 	el/libext/libext.vcxproj.filters
@@ -91,6 +90,7 @@ nobase_include_HEADERS = 			\
 	el/inc/inc_configs.h			\
 	el/libext/ext-base.h			\
 	el/libext/datetime.h			\
+	el/libext/interlocked.h			\
 	el/libext/ext-cpp.h				\
 	el/libext/ext-fw.h				\
 	el/libext/ext-net.h				\
