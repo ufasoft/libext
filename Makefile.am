@@ -10,7 +10,6 @@ libext_FILES = 						\
 	el/libext/ext-hash.h			\
 	el/libext/ext-http.h			\
 	el/libext/ext-lru.h				\
-	el/libext/ext-macro.h			\
 	el/libext/ext-meta.h			\
 	el/libext/ext-protocols.h		\
 	el/libext/ext-str.h				\
@@ -92,8 +91,9 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-cpp.h				\
 	el/libext/ext-core.h			\
 	el/libext/ext-fw.h				\
-	el/libext/ext-os.h				\
+	el/libext/ext-macro.h			\
 	el/libext/ext-net.h				\
+	el/libext/ext-os.h				\
 	el/libext/ext-posix-win.h		\
 	el/libext/ext-stream.h			\
 	el/libext/ext-string.h			\
