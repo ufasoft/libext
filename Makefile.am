@@ -5,7 +5,6 @@ libext_FILES = 						\
 	el/libext/ext-protocols.cpp		\
 	el/libext/mapped-file.cpp		\
 	el/libext/ext-json.cpp			\
-	el/libext/http.cpp				\
 	el/libext/vc.h					\
 	el/vc/vc-warnings.h				\
 	el/comp/mean.h					\
@@ -49,6 +48,7 @@ libext_la_SOURCES = 				\
 	el/libext/ext-os.cpp			\
 	el/libext/ext-stream.cpp		\
 	el/libext/ext-string.cpp		\
+	el/libext/http.cpp				\
 	el/libext/murmurhash.cpp 		\
 	el/libext/sockets.cpp 			\
 	el/libext/stack-trace.cpp		\
