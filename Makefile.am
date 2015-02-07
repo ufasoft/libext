@@ -4,7 +4,6 @@ libext_FILES = 						\
 	el/libext/file_config.h             \
 	el/libext/ext-protocols.cpp		\
 	el/libext/mapped-file.cpp		\
-	el/libext/varvalue.cpp			\
 	el/libext/ext-json.cpp			\
 	el/libext/http.cpp				\
 	el/libext/vc.h					\
@@ -54,6 +53,7 @@ libext_la_SOURCES = 				\
 	el/libext/sockets.cpp 			\
 	el/libext/stack-trace.cpp		\
 	el/libext/threader.cpp			\
+	el/libext/varvalue.cpp			\
 	el/libext/libext.vcxproj		\
 	el/libext/libext.vcxproj.filters
 
@@ -98,7 +98,7 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-stream.h			\
 	el/libext/ext-string.h			\
 	el/libext/ext-sync.h			\
-	el/libext/ext-thread.h			
+	el/libext/ext-thread.h
 
 if HAVE_FILESYSTEM
 else
