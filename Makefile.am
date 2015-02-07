@@ -101,8 +101,8 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-string.h			\
 	el/libext/ext-sync.h			\
 	el/libext/ext-thread.h			\
-	el/stl/decimal.h 				\
-	el/stl/dynamic_bitset.h
+	el/stl/decimal 					\
+	el/stl/dynamic_bitset
 
 if HAVE_FILESYSTEM
 else
