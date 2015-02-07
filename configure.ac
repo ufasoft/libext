@@ -44,6 +44,7 @@ AS_IF([test "x$CLANG" = "xyes"],
 
 AC_CHECK_HEADER([filesystem], $have_filesystem=true)
 AM_CONDITIONAL([HAVE_FILESYSTEM], [test x$have_filesystem = xtrue])
+AC_CHECK_LIB(gmp, __gmpz_init, , [AC_MSG_ERROR([Missing required libgmp-dev])])
 
 
 AC_OUTPUT(Makefile)
