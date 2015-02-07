@@ -55,7 +55,9 @@ libext_la_SOURCES = 				\
 	el/libext/threader.cpp			\
 	el/libext/varvalue.cpp			\
 	el/libext/libext.vcxproj		\
-	el/libext/libext.vcxproj.filters
+	el/libext/libext.vcxproj.filters \
+	el/stl/decimal.cpp 				\
+	el/stl/dynamic_bitset.cpp
 
 nobase_include_HEADERS = 			\
 	el/ext.h						\
@@ -98,7 +100,9 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-stream.h			\
 	el/libext/ext-string.h			\
 	el/libext/ext-sync.h			\
-	el/libext/ext-thread.h
+	el/libext/ext-thread.h			\
+	el/stl/decimal.h 				\
+	el/stl/dynamic_bitset.h
 
 if HAVE_FILESYSTEM
 else
