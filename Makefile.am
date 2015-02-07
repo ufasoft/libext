@@ -9,9 +9,7 @@ libext_FILES = 						\
 	el/libext/http.cpp				\
 	el/libext/vc.h					\
 	el/vc/vc-warnings.h				\
-	el/libext/bignum.cpp			\
 	el/comp/mean.h					\
-	el/bignum.h						\
 	el/inet/async-text-client.h		\
 	el/inet/async-text-client.cpp	\
 	el/inet/json-rpc.h				\
@@ -37,6 +35,7 @@ lib_LTLIBRARIES = libext.la
 
 libext_la_SOURCES = 				\
 	el/libext/binary-reader-writer.cpp	\
+	el/libext/bignum.cpp			\
 	el/libext/datetime.cpp			\
 	el/libext/ext-app.cpp			\
 	el/libext/ext-base.cpp			\
@@ -60,6 +59,7 @@ libext_la_SOURCES = 				\
 
 nobase_include_HEADERS = 			\
 	el/ext.h						\
+	el/bignum.h						\
 	el/libext.h						\
 	el/ext_messages.h				\
 	el/inc/default-defs.h			\
