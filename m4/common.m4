@@ -25,10 +25,17 @@ AC_COMPILE_IFELSE([AC_LANG_PROGRAM([], [[
 
 if test "x$CLANG" = "xyes"; then
 	CXXFLAGS="$CXXFLAGS -stdlib=libc++"
+	AC_SEARCH_LIBS([__cxa_bad_cast],  [c++abi], []			, [AC_MSG_ERROR([required libc++abi not found])				])
 	LDFLAGS="$LDFLAGS -lc++abi"
 fi
 
 AC_CHECK_LIB([pthread], [pthread_create],		, [AC_MSG_ERROR([Library libpthread not found])			])
+AC_SEARCH_LIBS([iconv],  [iconv], []			, [AC_MSG_ERROR([unable to find the iconv() function])				])
+
+
+
+
+
 
 
 AC_DEFUN([AU_PRINT_SETTINGS], [
