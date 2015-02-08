@@ -1,4 +1,5 @@
 AC_INIT(libext, 7.0, support@ufasoft.com,, http://github.com/ufasoft/el)
+AC_CONFIG_MACRO_DIR([m4])
 m4_include([m4/common.m4])
 
 

@@ -1,5 +1,4 @@
 AC_PREREQ([2.67])
-AC_CONFIG_MACRO_DIR([m4])
 AM_INIT_AUTOMAKE([foreign subdir-objects dist-xz])
 
 AM_SILENT_RULES([yes])
