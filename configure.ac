@@ -9,24 +9,6 @@ LT_INIT([disable-shared])
 
 AC_CONFIG_SRCDIR([el/libext.h])
 
-AC_PROG_CC([clang gcc])
-AC_PROG_CXX([clang++ g++])
-AM_PROG_CC_C_O
-AC_LANG([C++])
-
-AX_CHECK_COMPILE_FLAG([-std=c++1y], [CXXFLAGS="$CXXFLAGS -std=c++1y"], [CXXFLAGS="$CXXFLAGS -std=c++0x"])
-
-
-AC_COMPILE_IFELSE([AC_LANG_PROGRAM([], [[
-	#ifndef __clang__
-		not clang
-	#endif
-	]])],
-	[CLANG=yes], [CLANG=no])
-
-if test "x$CLANG" = "xyes"; then
-	CXXFLAGS="$CXXFLAGS -stdlib=libc++"
-fi
 
 AS_IF([test "x$CLANG" = "xyes"], 
 	[AC_COMPILE_IFELSE([AC_LANG_SOURCE[
