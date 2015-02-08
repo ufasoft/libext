@@ -31,8 +31,25 @@ fi
 AC_CHECK_LIB([pthread], [pthread_create],		, [AC_MSG_ERROR([Library not found])								])
 
 
-AC_DEFUN([HELLO_WORLD], [
-	echo Hello, World!
+AC_DEFUN([AU_PRINT_SETTINGS], [
+    echo
+    echo
+    echo "------------------------------------------------------------------------"
+    echo "$PACKAGE $VERSION"
+    echo "------------------------------------------------------------------------"
+    echo
+    echo
+    echo "Configuration Options Summary:"
+    echo
+    echo
+    echo "Compilation............: make (gmake on FreeBSD)"
+    echo "  CPPFLAGS.............: $CPPFLAGS"
+    echo "  CFLAGS...............: $CFLAGS"
+    echo "  CXXFLAGS.............. $CXXFLAGS"
+    echo
+    echo "Installation...........: make install (as root if needed, with 'su' or 'sudo')"
+    echo "  prefix...............: $prefix"
+    echo
 ])
 
 
