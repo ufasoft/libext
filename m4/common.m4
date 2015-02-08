@@ -26,7 +26,6 @@ AC_COMPILE_IFELSE([AC_LANG_PROGRAM([], [[
 if test "x$CLANG" = "xyes"; then
 	CXXFLAGS="$CXXFLAGS -stdlib=libc++"
 	AC_CHECK_LIB([c++abi], [__cxa_bad_cast],  	, [AC_MSG_ERROR([required libc++abi not found])					])
-	LDFLAGS="$LDFLAGS -lc++abi"
 fi
 
 AC_CHECK_LIB([pthread], [pthread_create],		, [AC_MSG_ERROR([Library libpthread not found])					])
