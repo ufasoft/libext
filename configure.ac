@@ -1,6 +1,5 @@
-m4_include([m4/common.m4])
-
 AC_INIT(libext, 7.0, support@ufasoft.com,, http://github.com/ufasoft/el)
+m4_include([m4/common.m4])
 
 
 LT_PREREQ([2.4])
