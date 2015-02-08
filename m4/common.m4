@@ -53,6 +53,7 @@ AC_DEFUN([AU_PRINT_SETTINGS], [
     echo "  CPPFLAGS.............: $CPPFLAGS"
     echo "  CFLAGS...............: $CFLAGS"
     echo "  CXXFLAGS.............. $CXXFLAGS"
+    echo "  LIBS.................. $LIBS"
     echo
     echo "Installation...........: make install (as root if needed, with 'su' or 'sudo')"
     echo "  prefix...............: $prefix"
