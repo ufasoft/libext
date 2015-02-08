@@ -31,4 +31,9 @@ fi
 AC_CHECK_LIB([pthread], [pthread_create],		, [AC_MSG_ERROR([Library not found])								])
 
 
+AC_DEFUN([HELLO_WORLD], [
+	echo Hello, World!
+])
+
+
 

@@ -70,6 +70,7 @@ echo "  prefix...............: $prefix"
 echo
 
 
+HELLO_WORLD
 
 
 
