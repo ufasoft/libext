@@ -25,9 +25,10 @@ AC_COMPILE_IFELSE([AC_LANG_PROGRAM([], [[
 
 if test "x$CLANG" = "xyes"; then
 	CXXFLAGS="$CXXFLAGS -stdlib=libc++"
+	LDFLAGS="$LDFLAGS -lc++abi"
 fi
 
-AC_CHECK_LIB([pthread], [pthread_create],		, [AC_MSG_ERROR([Library not found])								])
+AC_CHECK_LIB([pthread], [pthread_create],		, [AC_MSG_ERROR([Library libpthread not found])			])
 
 
 AC_DEFUN([AU_PRINT_SETTINGS], [
