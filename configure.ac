@@ -1,9 +1,7 @@
-AC_PREREQ([2.67])
-AC_INIT(libext, 7.0, support@ufasoft.com,, http://github.com/ufasoft/el)
-AC_CONFIG_MACRO_DIR([m4])
+m4_include([m4/common.m4])
 
-AM_INIT_AUTOMAKE([foreign subdir-objects dist-xz])
-AM_SILENT_RULES([yes])
+AC_INIT(libext, 7.0, support@ufasoft.com,, http://github.com/ufasoft/el)
+
 
 LT_PREREQ([2.4])
 LT_INIT([disable-shared])
