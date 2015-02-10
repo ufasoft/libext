@@ -36,7 +36,7 @@ if test "x$CLANG" = "xyes"; then
 	have_regex=yes
 fi
 
-if !test "x$have_regex" = "xyes"; then
+if ! test "x$have_regex" = "xyes"; then
 	AC_CHECK_LIB(pcre, pcre_compile,, AC_MSG_ERROR("Library PCRE not found: install libpcre3-dev / pcre-devel"))
 fi
 
