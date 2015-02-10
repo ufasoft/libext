@@ -23,8 +23,6 @@ libext_FILES = 						\
 	el/num/num.cpp					\
 	el/num/prime.h					\
 	el/num/prime.cpp				\
-	el/stl/codecvt					\
-	el/stl/codecvt.cpp				\
 	el/stl/filesystem				\
 	el/stl/filesystem.cpp				
 
@@ -105,10 +103,14 @@ nobase_include_HEADERS = 			\
 	el/stl/decimal 					\
 	el/stl/dynamic_bitset
 
-if HAVE_FILESYSTEM
-else
+if !HAVE_FILESYSTEM
 libext_la_SOURCES += el/stl/filesystem.cpp
 nobase_include_HEADERS += el/stl/filesystem
+endif
+
+if !HAVE_CODECVT
+libext_la_SOURCES += el/stl/codecvt.cpp
+nobase_include_HEADERS += el/stl/codecvt
 endif
 
 

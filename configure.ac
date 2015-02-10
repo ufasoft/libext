@@ -27,6 +27,9 @@ AC_CHECK_HEADERS([sys/time.h])
 AC_CHECK_HEADER([filesystem], $have_filesystem=true)
 AM_CONDITIONAL([HAVE_FILESYSTEM], [test x$have_filesystem = xtrue])
 
+AC_CHECK_HEADER([codecvt], $have_codecvt=true)
+AM_CONDITIONAL([HAVE_CODECVT], [test x$have_codecvt = xtrue])
+
 AC_CHECK_LIB(gmp, __gmpz_init, , [AC_MSG_ERROR([Missing required libgmp-dev])])
 
 PKG_CHECK_MODULES([JANSSON], [jansson >= 2.0], AC_DEFINE([HAVE_JANSSON], [1], [Defined to 1 if Jansson is present on the system]), [AC_MSG_ERROR([Missing required libjansson-dev / jansson-devel >= 2.0])])
