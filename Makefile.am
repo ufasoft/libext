@@ -113,6 +113,11 @@ libext_la_SOURCES += el/stl/codecvt.cpp
 nobase_include_HEADERS += el/stl/codecvt
 endif
 
+if !HAVE_REGEX
+libext_la_SOURCES += el/stl/regex.cpp
+nobase_include_HEADERS += el/stl/regex
+endif
+
 
 uninstall-hook:
 	if test -d ${includedir}/el; then rmdir ${includedir}/el/libext ${includedir}/el/inc ${includedir}/el; fi

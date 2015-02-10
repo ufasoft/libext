@@ -33,14 +33,14 @@ AC_COMPILE_IFELSE([AC_LANG_PROGRAM([], [[
 if test "x$CLANG" = "xyes"; then
 	CXXFLAGS="$CXXFLAGS -stdlib=libc++"
 	AC_CHECK_LIB([c++abi], [__cxa_bad_cast],  	, [AC_MSG_ERROR([required libc++abi not found])					])
-	has_regex=yes
+	have_regex=yes
 fi
 
-if !test "x$has_regex" = "xyes"; then
+if !test "x$have_regex" = "xyes"; then
 	AC_CHECK_LIB(pcre, pcre_compile,, AC_MSG_ERROR("Library PCRE not found: install libpcre3-dev / pcre-devel"))
 fi
 
-AM_CONDITIONAL(HAS_REGEX, [test "x$has_regex" = "xyes"])
+AM_CONDITIONAL(HAVE_REGEX, [test "x$have_regex" = "xyes"])
 
 
 AC_CHECK_LIB([pthread], [pthread_create],		, [AC_MSG_ERROR([Library libpthread not found])					])
