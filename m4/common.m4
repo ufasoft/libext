@@ -34,10 +34,9 @@ if test "x$CLANG" = "xyes"; then
 	has_regex=yes
 fi
 
-AS_IF([test "x$has_regex" = "xyes"]
-	, 
-	,[AC_CHECK_LIB(pcre, pcre_compile,, AC_MSG_ERROR("Library PCRE not found: install libpcre3-dev / pcre-devel"))]
-)
+if !test "x$has_regex" = "xyes"; then
+	AC_CHECK_LIB(pcre, pcre_compile,, AC_MSG_ERROR("Library PCRE not found: install libpcre3-dev / pcre-devel"))
+fi
 
 AM_CONDITIONAL(HAS_REGEX, [test "x$has_regex" = "xyes"])
 
