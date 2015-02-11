@@ -94,6 +94,9 @@ libext_la_SOURCES += el/stl/regex.cpp
 nobase_include_HEADERS += el/stl/regex
 endif
 
+src/el/stl/filesystem : src/el/stl/filesystem
+	echo "---"
+
 
 uninstall-hook:
 	if test -d ${includedir}/el; then rmdir ${includedir}/el/libext ${includedir}/el/inc ${includedir}/el; fi
