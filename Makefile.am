@@ -94,7 +94,7 @@ libext_la_SOURCES += el/stl/regex.cpp
 nobase_include_HEADERS += el/stl/regex
 endif
 
-src/el/stl/filesystem : src/el/stl/filesystem
+el/stl/filesystem : el/stl/filesystem
 	echo "---"
 
 
