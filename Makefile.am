@@ -1,31 +1,6 @@
 ACLOCAL_AMFLAGS = -I m4
 AM_CPPFLAGS = -I$(top_srcdir)
 
-libext_FILES = 						\
-	el/libext/file_config.h             \
-	el/libext/mapped-file.cpp		\
-	el/libext/vc.h					\
-	el/vc/vc-warnings.h				\
-	el/comp/mean.h					\
-	el/inet/async-text-client.h		\
-	el/inet/async-text-client.cpp	\
-	el/inet/json-rpc.h				\
-	el/inet/json-rpc.cpp			\
-    el/inet/detect-global-ip.cpp	\
-    el/inet/p2p-net.cpp				\
-    el/inet/p2p-peers.cpp			\
-    el/inet/p2p-net.h				\
-    el/inet/p2p-peers.h             \
-    el/inet/detect-global-ip.h 		\
-	el/num/mod.h					\
-	el/num/mod.cpp					\
-	el/num/num.h					\
-	el/num/num.cpp					\
-	el/num/prime.h					\
-	el/num/prime.cpp				\
-	el/stl/filesystem				\
-	el/stl/filesystem.cpp				
-
 lib_LTLIBRARIES = libext.la 
 
 libext_la_SOURCES = 				\
@@ -49,6 +24,7 @@ libext_la_SOURCES = 				\
 	el/libext/ext-string.cpp		\
 	el/libext/http.cpp				\
 	el/libext/murmurhash.cpp 		\
+	el/libext/rt.cpp		 		\
 	el/libext/sockets.cpp 			\
 	el/libext/stack-trace.cpp		\
 	el/libext/threader.cpp			\
