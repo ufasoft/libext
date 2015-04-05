@@ -1,5 +1,6 @@
 ACLOCAL_AMFLAGS = -I m4
 AM_CPPFLAGS = -I$(top_srcdir)
+AM_CXXFLAGS=-include el/ext.h
 
 lib_LTLIBRARIES = libext.la 
 
@@ -25,13 +26,10 @@ libext_la_SOURCES = 				\
 	el/libext/http.cpp				\
 	el/libext/murmurhash.cpp 		\
 	el/libext/rt.cpp		 		\
-	el/libext/trace.cpp 			\
 	el/libext/sockets.cpp 			\
 	el/libext/stack-trace.cpp		\
 	el/libext/threader.cpp			\
 	el/libext/varvalue.cpp			\
-	el/libext/libext.vcxproj		\
-	el/libext/libext.vcxproj.filters \
 	el/stl/decimal.cpp 				\
 	el/stl/dynamic_bitset.cpp
 
@@ -95,9 +93,23 @@ libext_la_SOURCES += el/stl/regex.cpp
 nobase_include_HEADERS += el/stl/regex
 endif
 
+
+
+BUILT_SOURCES = el/ext.h.gch
+
+el/ext.h.gch: el/ext.h
+	$(CXXCOMPILE) -x c++-header $<
+
+
+
+el/stl/decimal : el/stl/decimal
+	echo "---"
+
 el/stl/filesystem : el/stl/filesystem
 	echo "---"
 
+el/stl/regex : el/stl/regex
+	echo "---"
 
 uninstall-hook:
 	if test -d ${includedir}/el; then rmdir ${includedir}/el/libext ${includedir}/el/inc ${includedir}/el; fi
