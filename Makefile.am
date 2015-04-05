@@ -25,6 +25,7 @@ libext_la_SOURCES = 				\
 	el/libext/http.cpp				\
 	el/libext/murmurhash.cpp 		\
 	el/libext/rt.cpp		 		\
+	el/libext/trace.cpp 			\
 	el/libext/sockets.cpp 			\
 	el/libext/stack-trace.cpp		\
 	el/libext/threader.cpp			\
