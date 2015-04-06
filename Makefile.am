@@ -27,6 +27,7 @@ libext_la_SOURCES = 				\
 	el/libext/murmurhash.cpp 		\
 	el/libext/rt.cpp		 		\
 	el/libext/sockets.cpp 			\
+	el/libext/trace.cpp				\
 	el/libext/stack-trace.cpp		\
 	el/libext/threader.cpp			\
 	el/libext/varvalue.cpp			\
