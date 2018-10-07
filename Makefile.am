@@ -14,6 +14,7 @@ libext_la_SOURCES = 				\
 	el/libext/ext-core.cpp			\
 	el/libext/ext-cpu.cpp			\
 	el/libext/ext-encoding.cpp		\
+	el/libext/ext-err.cpp			\
 	el/libext/ext-file.cpp			\
 	el/libext/ext-fw.cpp			\
 	el/libext/ext-handlers.cpp		\
@@ -36,48 +37,49 @@ libext_la_SOURCES = 				\
 	el/stl/dynamic_bitset.cpp
 
 nobase_include_HEADERS = 			\
-	el/ext.h						\
-	el/bignum.h						\
-	el/libext.h						\
-	el/ext_messages.h				\
+	el/ext.h				\
+	el/bignum.h				\
+	el/libext.h				\
+	el/ext_messages.h			\
 	el/inc/default-defs.h			\
-	el/inc/ext_config.h				\
+	el/inc/ext_config.h			\
 	el/inc/inc_configs.h			\
-	el/inc/extver.h					\
+	el/inc/extver.h				\
 	el/libext/afterstl.h			\
 	el/libext/binary-reader-writer.h	\
-	el/libext/c-old.h				\
-	el/libext/cpp-old.h				\
+	el/libext/c-old.h			\
+	el/libext/cpp-old.h			\
 	el/libext/datetime.h			\
 	el/libext/facilities.h			\
 	el/libext/gcc-intrinsic.h		\
 	el/libext/interlocked.h			\
 	el/libext/exthelpers.h			\
-	el/libext/ext-app.h				\
+	el/libext/ext-app.h			\
 	el/libext/ext-base.h			\
 	el/libext/ext-blob.h			\
-	el/libext/ext-cpp.h				\
+	el/libext/ext-cpp.h			\
 	el/libext/ext-core.h			\
-	el/libext/ext-cpu.h				\
-	el/libext/ext-fw.h				\
+	el/libext/ext-cpu.h			\
+	el/libext/ext-err.h			\
+	el/libext/ext-fw.h			\
 	el/libext/ext-hash.h			\
 	el/libext/ext-http.h			\
-	el/libext/ext-lru.h				\
+	el/libext/ext-lru.h			\
 	el/libext/ext-macro.h			\
 	el/libext/ext-meta.h			\
-	el/libext/ext-net.h				\
-	el/libext/ext-os.h				\
+	el/libext/ext-net.h			\
+	el/libext/ext-os.h			\
 	el/libext/ext-posix-win.h		\
 	el/libext/ext-protocols.h		\
 	el/libext/ext-ptr.h				\
 	el/libext/ext-regex.h			\
 	el/libext/ext-safehandle.h		\
-	el/libext/ext-str.h				\
+	el/libext/ext-str.h			\
 	el/libext/ext-stream.h			\
 	el/libext/ext-string.h			\
 	el/libext/ext-sync.h			\
 	el/libext/ext-thread.h			\
-	el/stl/decimal 					\
+	el/stl/decimal 				\
 	el/stl/dynamic_bitset
 
 if !HAVE_FILESYSTEM
