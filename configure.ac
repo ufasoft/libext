@@ -1,8 +1,5 @@
-AC_INIT(libext, 7.0, support@ufasoft.com,, http://github.com/ufasoft/el)
+AC_INIT(libext, 18.0, support@ufasoft.com,, http://github.com/ufasoft/el)
 AC_CONFIG_MACRO_DIR([m4])
-
-CXXFLAGS="$CXXFLAGS -I ."
-
 m4_include([m4/common.m4])
 
 
@@ -13,25 +10,22 @@ LT_INIT([disable-shared])
 AC_CONFIG_SRCDIR([el/libext.h])
 
 
-AS_IF([test "x$CLANG" = "xyes"], 
-	[AC_COMPILE_IFELSE([AC_LANG_SOURCE[
-	  #include <type_traits> 
-	  #if !_LIBCPP_VERSION  
-	  #error No libc++      
-	  #endif                
-	  void func() {}]       
-		],                       	[CLANG_LIBCPP=yes], 
-		[AC_MSG_ERROR([libc++ required fo CLang++])]
-		)
-	])
+AS_IF([test "x$CLANG" = "xyes"],
+    [AC_COMPILE_IFELSE([AC_LANG_SOURCE[
+      #include <type_traits>
+      #if !_LIBCPP_VERSION
+      #error No libc++
+      #endif
+      void func() {}]
+        ],                          [CLANG_LIBCPP=yes],
+        [AC_MSG_ERROR([libc++ required for CLang++])]
+        )
+    ])
 
 AC_CHECK_HEADERS([sys/time.h])
 
 AC_CHECK_HEADER([filesystem], $have_filesystem=true)
 AM_CONDITIONAL([HAVE_FILESYSTEM], [test x$have_filesystem = xtrue])
-
-AC_CHECK_HEADER([codecvt], $have_codecvt=true)
-AM_CONDITIONAL([HAVE_CODECVT], [test x$have_codecvt = xtrue])
 
 AC_CHECK_LIB(gmp, __gmpz_init, , [AC_MSG_ERROR([Missing required libgmp-dev])])
 

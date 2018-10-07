@@ -2,7 +2,7 @@ ACLOCAL_AMFLAGS = -I m4
 AM_CPPFLAGS = -I$(top_srcdir)
 AM_CXXFLAGS=-include el/ext.h
 
-lib_LTLIBRARIES = libext.la 
+lib_LTLIBRARIES = libext.la
 
 libext_la_SOURCES = 				\
 	el/libext/binary-reader-writer.cpp	\
@@ -12,6 +12,7 @@ libext_la_SOURCES = 				\
 	el/libext/ext-base.cpp			\
 	el/libext/ext-blob.cpp			\
 	el/libext/ext-core.cpp			\
+	el/libext/ext-cpu.cpp			\
 	el/libext/ext-encoding.cpp		\
 	el/libext/ext-file.cpp			\
 	el/libext/ext-fw.cpp			\
@@ -114,7 +115,3 @@ el/stl/regex : el/stl/regex
 
 uninstall-hook:
 	if test -d ${includedir}/el; then rmdir ${includedir}/el/libext ${includedir}/el/inc ${includedir}/el; fi
-
-
-
-
