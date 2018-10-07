@@ -85,10 +85,6 @@ libext_la_SOURCES += el/stl/filesystem.cpp
 nobase_include_HEADERS += el/stl/filesystem
 endif
 
-if !HAVE_CODECVT
-libext_la_SOURCES += el/stl/codecvt.cpp
-nobase_include_HEADERS += el/stl/codecvt
-endif
 
 if !HAVE_REGEX
 libext_la_SOURCES += el/stl/regex.cpp
