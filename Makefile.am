@@ -2,7 +2,7 @@ ACLOCAL_AMFLAGS = -I m4
 AM_CPPFLAGS = -I$(top_srcdir)
 AM_CXXFLAGS=-include el/ext.h
 
-lib_LTLIBRARIES = libext.la 
+lib_LTLIBRARIES = libext.la
 
 libext_la_SOURCES = 				\
 	el/libext/binary-reader-writer.cpp	\
@@ -13,6 +13,7 @@ libext_la_SOURCES = 				\
 	el/libext/ext-blob.cpp			\
 	el/libext/ext-core.cpp			\
 	el/libext/ext-encoding.cpp		\
+	el/libext/ext-err.cpp			\
 	el/libext/ext-file.cpp			\
 	el/libext/ext-fw.cpp			\
 	el/libext/ext-handlers.cpp		\
@@ -54,10 +55,12 @@ nobase_include_HEADERS = 			\
 	el/libext/exthelpers.h			\
 	el/libext/ext-app.h				\
 	el/libext/ext-base.h			\
+	el/libext/ext-basic-cpp.h			\
 	el/libext/ext-blob.h			\
 	el/libext/ext-cpp.h				\
 	el/libext/ext-core.h			\
 	el/libext/ext-cpu.h				\
+	el/libext/ext-err.h				\
 	el/libext/ext-fw.h				\
 	el/libext/ext-hash.h			\
 	el/libext/ext-http.h			\
@@ -76,7 +79,7 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-string.h			\
 	el/libext/ext-sync.h			\
 	el/libext/ext-thread.h			\
-	el/stl/decimal 					\
+	el/stl/decimal			\
 	el/stl/dynamic_bitset
 
 if !HAVE_FILESYSTEM
@@ -96,6 +99,7 @@ endif
 
 
 
+
 BUILT_SOURCES = el/ext.h.gch
 
 el/ext.h.gch: el/ext.h
@@ -112,9 +116,8 @@ el/stl/filesystem : el/stl/filesystem
 el/stl/regex : el/stl/regex
 	echo "---"
 
+el/stl/dynamic_bitset : el/stl/dynamic_bitset
+	echo "---"
+
 uninstall-hook:
 	if test -d ${includedir}/el; then rmdir ${includedir}/el/libext ${includedir}/el/inc ${includedir}/el; fi
-
-
-
-
