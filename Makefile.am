@@ -96,10 +96,10 @@ endif
 
 
 BUILT_SOURCES = el/ext.h.gch
+CLEANFILES = $(BUILT_SOURCES)
 
 el/ext.h.gch: el/ext.h
 	$(CXXCOMPILE) -x c++-header $<
-
 
 
 el/stl/decimal : el/stl/decimal
