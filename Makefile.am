@@ -25,7 +25,6 @@ libext_la_SOURCES = 				\
 	el/libext/ext-protocols.cpp		\
 	el/libext/ext-stream.cpp		\
 	el/libext/ext-string.cpp		\
-	el/libext/http.cpp				\
 	el/libext/murmurhash.cpp 		\
 	el/libext/rt.cpp		 		\
 	el/libext/sockets.cpp 			\
@@ -63,7 +62,6 @@ nobase_include_HEADERS = 			\
 	el/libext/ext-err.h			\
 	el/libext/ext-fw.h			\
 	el/libext/ext-hash.h			\
-	el/libext/ext-http.h			\
 	el/libext/ext-lru.h			\
 	el/libext/ext-macro.h			\
 	el/libext/ext-meta.h			\
