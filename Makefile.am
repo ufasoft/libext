@@ -26,9 +26,10 @@ libext_la_SOURCES = 				\
 	el/libext/ext-stream.cpp		\
 	el/libext/ext-string.cpp		\
 	el/libext/murmurhash.cpp 		\
-	el/libext/rt.cpp		 		\
+	el/libext/rt.cpp		 	\
+	el/libext/safehandle.cpp		\
 	el/libext/sockets.cpp 			\
-	el/libext/trace.cpp				\
+	el/libext/trace.cpp			\
 	el/libext/stack-trace.cpp		\
 	el/libext/threader.cpp			\
 	el/libext/varvalue.cpp			\
